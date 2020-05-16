@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function () {
+            $('#toggleThis').click(function () {
+                $('#para').toggle(400, "swing");
+            });
+        });
+    </script>
+</head>
+<body>
+
+<a id="toggleThis" href="#">Click here to toggle</a>
+
+<p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae consectetur consequuntur cumque, ex, exercitationem, illo ipsam iste labore nihil non provident repudiandae temporibus unde veniam! Error facere minus odit.</p>
+
+</body>
+</html>
