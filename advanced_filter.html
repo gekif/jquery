@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function () {
+            $("p:first-child").css("border", "1 px solid red");
+//            $("p:last-of-type").css("border", "1 px solid blue");
+//            $("div:has(p[class=third])").css("border", "4 px solid yellow");
+//            $("p:contains('Fikar')").css("border", "4 px solid yellow");
+//            $("p:nth-child(3)").css("border", "4 px solid yellow");
+//            $("p:parent").css("border", "4 px solid yellow");
+        });
+    </script>
+
+</head>
+<body>
+
+<div id="container">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aliquam, asperiores atque aut, consectetur excepturi facilis in incidunt ipsam nobis numquam odio praesentium provident saepe voluptatibus. Ipsam iure mollitia perferendis.</p>
+<p>Fikar Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aliquam, asperiores atque aut, consectetur excepturi facilis in incidunt ipsam nobis numquam odio praesentium provident saepe voluptatibus. Ipsam iure mollitia perferendis.</p>
+<p clas="third">Lorem ipsum dolor Fikar sit amet, consectetur adipisicing elit. Accusantium, aliquam, asperiores atque aut, consectetur excepturi facilis in incidunt ipsam nobis numquam odio praesentium provident saepe voluptatibus. Ipsam iure mollitia perferendis.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aliquam, asperiores atque aut, consectetur excepturi facilis in incidunt ipsam nobis numquam odio praesentium provident saepe voluptatibus. Ipsam iure mollitia perferendis.</p>
+</div>
+</body>
+</html>
