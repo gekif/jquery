@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function () {
+            $('#slide-up').click(function () {
+                $('#para').slideUp("slow", "linear");
+            });
+
+            $('#slide-down').click(function () {
+                $('#para').slideDown("fast", "linear");
+            });
+
+            $('#toggleSlide').click(function () {
+                $('#para').slideToggle("fast", function () {
+                    alert('Done');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+<a id="slide-up" href="#">Click here to slide up</a>
+<a id="slide-down" href="#">Click here to slide down</a>
+<a id="toggleSlide" href="#">Click here to toggle</a>
+
+<p id="para">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae consectetur consequuntur cumque, ex, exercitationem, illo ipsam iste labore nihil non provident repudiandae temporibus unde veniam! Error facere minus odit.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae consectetur consequuntur cumque, ex, exercitationem, illo ipsam iste labore nihil non provident repudiandae temporibus unde veniam! Error facere minus odit.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae consectetur consequuntur cumque, ex, exercitationem, illo ipsam iste labore nihil non provident repudiandae temporibus unde veniam! Error facere minus odit.
+</p>
+
+</body>
+</html>
