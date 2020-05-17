@@ -7,20 +7,24 @@
 
     <script>
         $("document").ready(function () {
-            $("#append").click(function () {
-                $("p:first").append(" Hello");
+            $("#appendTo").click(function () {
+                $("#box p:first").appendTo("#box p:last");
             });
 
-            $("#prepend").click(function () {
-                $("p:first").prepend("Hello again from me ");
+//            $("#prependTo").click(function () {
+//                $("p:last").prependTo("p:first");
+//            });
+
+            $("#prependTo").click(function () {
+                $("<p>New Para</p>").insertAfter("p:first");
             });
         });
     </script>
 </head>
 <body>
 
-<a href="#" id="append">Append</a>
-<a href="#" id="prepend">Prepend</a>
+<a href="#" id="appendTo">Append To</a>
+<a href="#" id="prependTo">Prepend To</a>
 
 <div id="box">
     <p>This is the 1</p>
