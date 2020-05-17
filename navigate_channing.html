@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function () {
+//            $("#box p:first").next().css("border", "2px solid red");
+//            $("#box p:last").prev().css("border", "2px solid red");
+//            $("#box").parents().addClass('color').css("border", "2px solid red");
+            $("#box p:first").addClass('color').css("border", "2px solid red");
+        });
+    </script>
+
+    <style>
+        .color {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci aliquid animi aperiam asperiores dolore doloribus eius est illum in labore nobis nulla obcaecati, ratione repudiandae rerum sit tempora!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci aliquid animi aperiam asperiores dolore doloribus eius est illum in labore nobis nulla obcaecati, ratione repudiandae rerum sit tempora!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci aliquid animi aperiam asperiores dolore doloribus eius est illum in labore nobis nulla obcaecati, ratione repudiandae rerum sit tempora!</p>
+</div>
+
+</body>
+</html>
