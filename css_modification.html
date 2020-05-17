@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function () {
+            $("#add-class").click(function () {
+                $("p:first").addClass("color");
+            });
+
+            $("#remove-class").click(function () {
+                $("p:first").removeClass("color");
+            });
+
+            $("#toggle-class").click(function () {
+                $("p:first").toggleClass("color");
+            });
+
+            $("#increase-size").click(function () {
+                $("p:first").css("font-size", "+=1px");
+            });
+        });
+    </script>
+
+    <style>
+        .color {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<a href="#" id="add-class">Add Class</a>
+<a href="#" id="remove-class">Remove Class</a>
+<a href="#" id="toggle-class">Toggle Class</a>
+<a href="#" id="increase-size">Increase Size</a>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at aut error eum magni maxime molestias non quod vel vero! Aliquam distinctio dolores facere fugit impedit ipsum nulla obcaecati repellendus.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at aut error eum magni maxime molestias non quod vel vero! Aliquam distinctio dolores facere fugit impedit ipsum nulla obcaecati repellendus.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at aut error eum magni maxime molestias non quod vel vero! Aliquam distinctio dolores facere fugit impedit ipsum nulla obcaecati repellendus.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at aut error eum magni maxime molestias non quod vel vero! Aliquam distinctio dolores facere fugit impedit ipsum nulla obcaecati repellendus.</p>
+
+</body>
+</html>
