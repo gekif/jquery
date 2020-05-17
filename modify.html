@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function () {
+//            $('#container p').wrap("<div id='box'>");
+//            $('#container').empty();
+//            $('#container p').remove();
+//            $('#container p').wrapAll("<div id='box'>");
+            $('<div>container</div>').replaceAll("#container");
+        });
+    </script>
+
+    <style>
+        #box {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <p>Fikar Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur cum facilis magnam qui vitae voluptate. Architecto aspernatur doloribus dolorum facere id ipsa neque nihil omnis, possimus quas sapiente veniam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur cum facilis magnam qui vitae voluptate. Architecto aspernatur doloribus dolorum facere id ipsa neque nihil omnis, possimus quas sapiente veniam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur cum facilis magnam qui vitae voluptate. Architecto aspernatur doloribus dolorum facere id ipsa neque nihil omnis, possimus quas sapiente veniam.</p>
+</div>
+
+</body>
+</html>
